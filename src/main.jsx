@@ -1,3 +1,7 @@
-import "./index.css";
+import './index.css';
+import ReactDom from 'react-dom/client';
+import App from './App';
 
-// Render the App component to the root element
+const div = document.getElementById('root');
+const root = ReactDom.createRoot(div);
+root.render(<App />);
