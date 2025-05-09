@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Section from './components/Section';
 import HelpfulResource from './components/HelpfulResource';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         />
         <HelpfulResource label={'react dev'} link={'https://react.dev/'} />
       </Section>
+      <AboutMe></AboutMe>
     </div>
   );
 }
