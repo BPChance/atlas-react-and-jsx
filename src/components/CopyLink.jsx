@@ -1,3 +1,5 @@
+import copyImage from '../assets/copy.svg';
+
 function CopyLink({ link }) {
   const copyLink = () => {
     navigator.clipboard
@@ -11,7 +13,7 @@ function CopyLink({ link }) {
   };
   return (
     <img
-      src="src/assets/copy.svg"
+      src={copyImage}
       alt="copy image"
       className="copy"
       link={link}

@@ -1,7 +1,9 @@
+import profileImage from '../assets/profile.jpeg';
+
 function AboutMe() {
   return (
     <div className="about-me">
-      <img src="src/assets/profile.jpeg" alt="Profile photo" />
+      <img src={profileImage} alt="Profile photo" />
       <p>
         Hi, I'm Braden Chance, a Software Engineer currently in my fifth
         trimester at Atlas School. I specialize in full-stack web development

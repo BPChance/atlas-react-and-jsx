@@ -1,4 +1,7 @@
 import { Component } from 'react';
+import dayImage from '../assets/day.svg';
+import eveningImage from '../assets/evening.svg';
+import nightImage from '../assets/night.svg';
 
 class Greeting extends Component {
   render() {
@@ -7,28 +10,28 @@ class Greeting extends Component {
     if (time >= 6 && time < 12) {
       return (
         <h1 className="greeting">
-          <img src="src/assets/day.svg" alt="day image" />
+          <img src={dayImage} alt="day image" />
           Good Morning!
         </h1>
       );
     } else if (time >= 12 && time < 17) {
       return (
         <h1 className="greeting">
-          <img src="src/assets/day.svg" alt="day image" />
+          <img src={dayImage} alt="day image" />
           Good Afternoon!
         </h1>
       );
     } else if (time >= 17 && time < 21) {
       return (
         <h1 className="greeting">
-          <img src="src/assets/evening.svg" alt="evening image" />
+          <img src={eveningImage} alt="evening image" />
           Good Evening!
         </h1>
       );
     } else {
       return (
         <h1 className="greeting">
-          <img src="src/assets/night.svg" alt="night image" />
+          <img src={nightImage} alt="night image" />
           Good Night!
         </h1>
       );
