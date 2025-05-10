@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import HelpfulResource from './components/HelpfulResource';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <HelpfulResource label={'react dev'} link={'https://react.dev/'} />
       </Section>
       <AboutMe></AboutMe>
+      <Footer></Footer>
     </div>
   );
 }
